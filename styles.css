@@ -1,45 +1,44 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* styles.css */
 
+/* Global Styles */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
 }
 
 .container {
-  width: 90%;
-  margin: auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
+/* Header Styles */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: black;
+  color: white;
   padding: 20px 0;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .logo {
-  font-size: 1.5rem;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
 }
 
 .nav-links {
-  display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links li {
+  display: inline;
   margin-right: 20px;
 }
 
-.nav-links a {
-  color: #fff;
+.nav-links li a {
+  color: white;
   text-decoration: none;
 }
 
@@ -49,29 +48,76 @@ nav {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .btn {
   display: inline-block;
-  background-color: #FF6700;
-  color: #fff;
+  background-color: red;
+  color: white;
   padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   text-decoration: none;
+  margin-top: 20px;
+}
+
+/* Featured Products Styles */
+.featured-products {
+  background-color: black;
+  padding: 50px 0;
+}
+
+.product {
+  background-color: red;
+  padding: 20px;
+  margin-bottom: 20px;
   border-radius: 5px;
 }
 
-/* Hamburger menu styles */
-.burger {
-  display: none;
-  flex-direction: column;
+/* Testimonials Styles */
+.testimonials {
+  padding: 50px 0;
+}
+
+.testimonial {
+  background-color: red;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Newsletter Signup Styles */
+.newsletter {
+  background-color: red;
+  color: white;
+  padding: 50px 0;
+}
+
+.newsletter form {
+  text-align: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.line1, .line2, .line3 {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px;
+/* Footer Styles */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
